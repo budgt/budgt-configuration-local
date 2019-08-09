@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      username: budgt
+      password: '&#Uvbrf&6hnv*Z5H'
+      host: budgt-mongodb
+      database: budgt
+      port: 27017

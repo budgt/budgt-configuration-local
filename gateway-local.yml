@@ -1,0 +1,16 @@
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
+  routes:
+    ui:
+      url: http://budgt-frontend:1380/
+    category-service:
+      path: /api/category-service/**
+      url: http://budgt-category-service:1338/
+spring:
+  data:
+    mongodb:
+      username: budgt
+      password: '&#Uvbrf&6hnv*Z5H'
+      host: budgt-mongodb
+      database: budgt
+      port: 27017
