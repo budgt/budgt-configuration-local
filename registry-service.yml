@@ -9,3 +9,5 @@ eureka:
     fetchRegistry: false    
   serviceUrl:
     defaultZone: http://budgt-registry-service:$1340/eureka/
+  server:
+    eviction-interval-timer-in-ms: 1000
