@@ -6,7 +6,3 @@ spring:
       host: budgt-mongodb
       database: budgt
       port: 27017
-server:
-  servlet:
-    context-path: /uaa
-  port: 1330
