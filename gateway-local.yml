@@ -6,6 +6,16 @@ zuul:
     category-service:
       path: /api/category-service/**
       url: http://budgt-category-service:1338/
+    auth-service:
+      path: /uaa/**
+      url: auth-service
+      stripPrefix: false
+      sensitiveHeaders:
+    account-service:
+      path: /accounts/**
+      serviceId: account-service
+      stripPrefix: false
+      sensitiveHeaders:
 spring:
   data:
     mongodb:
