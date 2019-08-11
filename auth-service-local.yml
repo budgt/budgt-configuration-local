@@ -6,3 +6,7 @@ spring:
       host: budgt-mongodb
       database: budgt
       port: 27017
+eureka:
+  client:
+      serviceUrl:
+        defaultZone: http://budgt-registry-service:1340/eureka
