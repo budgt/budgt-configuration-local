@@ -6,6 +6,8 @@ spring:
       host: budgt-mongodb
       database: budgt
       port: 27017
+server:
+  port: 1331
 eureka:
   client:
       serviceUrl:
