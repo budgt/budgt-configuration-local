@@ -5,7 +5,8 @@ zuul:
       url: http://budgt-frontend:1380/
     category-service:
       path: /api/category-service/**
-      url: http://budgt-category-service:1338/
+      serviceId: category-service
+      stripPrefix: false
     auth-service:
       path: /uaa/**
       url: auth-service
