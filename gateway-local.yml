@@ -1,5 +1,4 @@
 zuul:
-  sensitive-headers: Cookie,Set-Cookie
   routes:
     ui:
       url: http://budgt-frontend:1380/
@@ -9,8 +8,8 @@ zuul:
       stripPrefix: true 
     auth-service:
       path: /uaa/**
-      url: auth-service
-      stripPrefix: false
+      serviceId: auth-service
+      stripPrefix: true
       sensitiveHeaders:
     account-service:
       path: /accounts/**
