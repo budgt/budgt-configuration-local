@@ -1,0 +1,20 @@
+security:
+  oauth2:
+    client:
+      clientId: account-service
+      clientSecret: 1234
+      grant-type: client_credentials
+      scope: server
+    resource:
+      service-id=auth-server
+      loadBalanced: true
+      prefer-token-info: false
+
+server:
+  servlet:
+    context-path: /accounts
+  port: 1332 
+
+feign:
+  hystrix:
+    enabled: true
