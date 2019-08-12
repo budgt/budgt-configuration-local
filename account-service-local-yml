@@ -1,14 +1,18 @@
 security:
   oauth2:
     client:
+      serviceId: auth-server
       clientId: account-service
+      accessTokenUri: http://${security.oauth2.client.serviceId}/uaa/oauth/token
       clientSecret: 1234
       grant-type: client_credentials
       scope: server
     resource:
-      service-id=auth-server
+      serviceId=auth-server
       loadBalanced: true
       prefer-token-info: false
+      user-info-uri: http://${security.oauth2.resource.serviceId}/uaa/user/current
+      token-info-uri: http://${security.oauth2.resource.serviceId}/uaa/oauth/check_token 
 
 server:
   servlet:
