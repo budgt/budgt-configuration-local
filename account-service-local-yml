@@ -22,3 +22,8 @@ server:
 feign:
   hystrix:
     enabled: true
+
+eureka:
+  client:
+      serviceUrl:
+        defaultZone: http://budgt-registry-service:1340/eureka
