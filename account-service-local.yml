@@ -8,7 +8,7 @@ security:
       grant-type: client_credentials
       scope: server
     resource:
-      serviceId=auth-server
+      serviceId: auth-server
       loadBalanced: true
       prefer-token-info: false
       user-info-uri: http://${security.oauth2.resource.serviceId}/uaa/user/current
