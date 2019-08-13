@@ -1,18 +1,11 @@
 security:
   oauth2:
     client:
-      serviceId: auth-server
       clientId: account-service
-      accessTokenUri: http://${security.oauth2.client.serviceId}/uaa/oauth/token
       clientSecret: 1234
+      accessTokenUri: http://budgt-gateway/uaa/oauth/token
       grant-type: client_credentials
       scope: server
-    resource:
-      serviceId: auth-server
-      loadBalanced: true
-      prefer-token-info: false
-      user-info-uri: http://${security.oauth2.resource.serviceId}/uaa/user/current
-      token-info-uri: http://${security.oauth2.resource.serviceId}/uaa/oauth/check_token 
 
 server:
   servlet:
