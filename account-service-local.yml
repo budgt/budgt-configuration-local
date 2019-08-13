@@ -3,12 +3,12 @@ security:
     client:
       clientId: account-service
       clientSecret: 1234
-      accessTokenUri: http://budgt-gateway/uaa/oauth/token
+      accessTokenUri: http://budgt-gateway:1336/uaa/oauth/token
       grant-type: client_credentials
       scope: server
     resource:
-      user-info-uri: http://budgt-gateway/uaa/user/current
-      token-info-uri: http://budgt-gateway/uaa/oauth/check_token
+            user-info-uri: http://budgt-gateway:1336/uaa/user/current
+            token-info-uri: http://budgt-gateway/:1336uaa/oauth/check_token
 
 server:
   servlet:
