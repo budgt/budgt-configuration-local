@@ -6,6 +6,9 @@ security:
       accessTokenUri: http://budgt-gateway/uaa/oauth/token
       grant-type: client_credentials
       scope: server
+    resource:
+      user-info-uri: http://budgt-gateway/uaa/user/current
+      token-info-uri: http://budgt-gateway/uaa/oauth/check_token
 
 server:
   servlet:
