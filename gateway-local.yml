@@ -14,7 +14,7 @@ zuul:
     account-service:
       path: /account-service/**
       serviceId: account-service
-      stripPrefix: true
+      stripPrefix: false
       sensitiveHeaders:
 spring:
   data:
