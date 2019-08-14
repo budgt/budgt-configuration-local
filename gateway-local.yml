@@ -12,9 +12,9 @@ zuul:
       stripPrefix: true
       sensitiveHeaders:
     account-service:
-      path: /accounts/**
+      path: /account-service/**
       serviceId: account-service
-      stripPrefix: false
+      stripPrefix: true
       sensitiveHeaders:
 spring:
   data:
