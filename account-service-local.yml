@@ -11,8 +11,6 @@ security:
       token-info-uri: http://budgt-gateway/:1336uaa/oauth/check_token
 
 server:
-  servlet:
-    context-path: /accounts
   port: 1332 
 
 feign:
