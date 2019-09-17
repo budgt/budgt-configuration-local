@@ -7,7 +7,7 @@ zuul:
       serviceId: category-service
       stripPrefix: true 
     auth-service:
-      path: /api/uaa/**
+      path: /uaa/**
       serviceId: auth-service
       stripPrefix: true
       sensitiveHeaders:
