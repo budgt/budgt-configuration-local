@@ -3,7 +3,7 @@ security:
     client:
       clientId: account-service
       clientSecret: 1234
-      accessTokenUri: http://budgt-auth-service:1331/uaa/oauth/token
+      accessTokenUri: http://budgt-auth-service:1331/oauth/token
       grant-type: client_credentials
       scope: server
     resource:
