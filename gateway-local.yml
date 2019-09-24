@@ -12,7 +12,7 @@ zuul:
       stripPrefix: true
       sensitiveHeaders:
     account-service:
-      path: /account-service/**
+      path: /api/account-service/**
       serviceId: account-service
       stripPrefix: true
       sensitiveHeaders:
