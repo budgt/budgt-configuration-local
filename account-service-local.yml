@@ -16,14 +16,6 @@ server:
 feign:
   hystrix:
     enabled: true
-  client:
-    config:
-      authClient:
-        loggerLevel: full 
-
-logging:
-  level:
-    ROOT: DEBUG
 
 eureka:
   client:
