@@ -12,7 +12,12 @@ eureka:
         defaultZone: http://budgt-registry-service:1340/eureka
 security:
   oauth2:
+    client:
+      clientId: category-service
+      clientSecret: 1234
+      accessTokenUri: http://budgt-auth-service:1331/oauth/token
+      grant-type: client_credentials
+      scope: server
     resource:
       user-info-uri: http://budgt-gateway:1336/api/uaa/user/current
       token-info-uri: http://budgt-gateway:1336/api/uaa/oauth/check_token
-
