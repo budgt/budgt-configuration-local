@@ -17,6 +17,12 @@ zuul:
       serviceId: account-service
       stripPrefix: true
       sensitiveHeaders:
+    bank-account-service:
+      path: /api/bank-account-service/**
+      serviceId: bank-sccount-service
+      stripPrefix: true 
+      sensitiveHeaders:
+
 spring:
   data:
     mongodb:
