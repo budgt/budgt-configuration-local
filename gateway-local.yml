@@ -19,7 +19,7 @@ zuul:
       sensitiveHeaders:
     bank-account-service:
       path: /api/bank-account-service/**
-      serviceId: bank-sccount-service
+      serviceId: bank-account-service
       stripPrefix: true 
       sensitiveHeaders:
 
